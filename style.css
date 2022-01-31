@@ -1,0 +1,733 @@
+* {
+  font-weight: 400;
+  font-family: "poppins";
+}
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+}
+
+/* Title */
+.title h2 {
+  margin-top: -10px;
+  font-size: 34px;
+}
+
+.title h5 {
+  font-size: 20px;
+}
+
+.title a {
+  font-size: 32px;
+}
+
+/* Title Sosmed */
+.title-sosmed {
+  margin-top: -85px;
+}
+
+.title-sosmed h3 {
+  margin-top: -8px;
+  font-size: 28px;
+}
+
+.title-sosmed h6 {
+  font-size: 18px;
+}
+
+.menu a {
+  font-size: 22px;
+}
+
+/* services */
+.services i {
+  font-size: 50px;
+}
+
+.services h6 {
+  font-size: 18px;
+}
+
+.link h3 {
+  font-size: 28px;
+}
+
+.link a {
+  font-size: 24px;
+}
+
+.rectangle {
+  width: 100%;
+  max-width: 700px;
+  margin: auto;
+}
+
+.banner svg {
+  width: 100%;
+  margin-top: -150px;
+}
+
+.banner svg {
+  width: 100%;
+  margin-top: -150px;
+}
+
+/* Penjelasan Paket */
+.penjelasan h2 {
+  font-size: 26px;
+}
+
+.penjelasan h3 {
+  font-size: 22px;
+}
+
+.penjelasan p {
+  margin-bottom: 75px;
+  font-size: 18px;
+}
+
+.penjelasan a {
+  margin-top: -70px;
+  font-size: 18px;
+}
+
+/* Pilih Desain */
+.desain h6 {
+  font-size: 22px;
+  margin-top: -10px;
+}
+
+.desain .container {
+  margin-top: 100px;
+}
+
+.card-img-overlay:hover {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.desain img {
+  border-radius: 20px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.desain .container {
+  width: 100%;
+  max-width: 800px;
+}
+
+.desain .card-overlay {
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.desain a:hover .card-overlay {
+  opacity: 1;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.card a:hover img {
+  opacity: 0.3;
+  background-color: rgba(0, 0, 0, 1);
+}
+
+/* portfolio */
+.portfolio {
+  margin-top: 95px;
+}
+
+.portfolio img {
+  width: 100%;
+  max-width: 400px;
+}
+
+.portfolio .container {
+  width: 100%;
+  max-width: 800px;
+}
+
+.portfolio h4 {
+  font-size: 24px;
+}
+
+.portfolio a {
+  font-size: 20px;
+}
+
+.portfolio .zoom img {
+  border-radius: 20px;
+}
+
+/* overlay */
+.overlay {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 9999;
+  transition: 0.8s;
+  text-align: center;
+  padding: 120px 0;
+}
+
+.overlay:target {
+  width: auto;
+  height: auto;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.overlay img {
+  width: 100%;
+  max-width: 550px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.overlay:target img {
+  animation: Fade 0.4s;
+}
+
+.overlay .close {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  font-size: 3em;
+  margin-left: -15px;
+  opacity: 0;
+}
+
+.overlay:target .close {
+  animation: slideDownFade 0.5s 0.5s forwards;
+}
+
+.overlay:target .next,
+.overlay:target .prev {
+  animation: Fade 0.5s 0.5s forwards;
+}
+
+/* navigasi */
+.overlay .next,
+.prev {
+  font-size: 2em;
+  opacity: 0;
+}
+
+.overlay .prev {
+  position: absolute;
+  top: 90%;
+  left: 42%;
+}
+
+.overlay .next {
+  position: absolute;
+  top: 90%;
+  right: 42%;
+}
+
+/* animasi */
+@keyframes Fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomFade {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes slideDownFade {
+  0% {
+    opacity: 0;
+    margin-top: -20px;
+  }
+
+  100% {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
+
+/* Utility */
+.bg-white {
+  background-color: #fff;
+}
+.text-gold {
+  color: rgb(255, 217, 0);
+}
+
+.btn-50 {
+  background-color: #c4c4c4;
+  border-radius: 50px;
+  color: black;
+  font-weight: 700;
+}
+
+.btn-50:hover {
+  background-color: gold;
+  border-radius: 50px;
+  color: black;
+  font-weight: 700;
+}
+
+/* Responsive */
+@media (max-width: 350px) {
+  .title h2 {
+    font-size: 20px;
+  }
+
+  .title h5 {
+    font-size: 10px;
+  }
+
+  .title a {
+    font-size: 24px;
+  }
+
+  .menu a {
+    font-size: 16px;
+  }
+
+  .title-sosmed {
+    margin-top: -60px;
+  }
+
+  .title-sosmed h3 {
+    font-size: 18px;
+    margin-top: -10px;
+  }
+
+  .title-sosmed h6 {
+    font-size: 14px;
+  }
+
+  .banner svg {
+    width: 100%;
+    margin-top: -90px;
+  }
+
+  .about h3 {
+    font-size: 18px;
+  }
+
+  .about p {
+    font-size: 14px;
+  }
+
+  .desain h6 {
+    font-size: 8px;
+  }
+
+  /* Penjelasan Paket */
+  .penjelasan h2 {
+    font-size: 20px;
+  }
+
+  .penjelasan h3 {
+    font-size: 18px;
+  }
+
+  .penjelasan p {
+    margin-bottom: 75px;
+    font-size: 15px;
+  }
+
+  .penjelasan a {
+    margin-top: -70px;
+    font-size: 14px;
+  }
+
+  .portfolio h4 {
+    font-size: 14px;
+  }
+
+  .portfolio a {
+    font-size: 10px;
+  }
+
+  .services h6 {
+    font-size: 10px;
+  }
+
+  .link h3 {
+    font-size: 18px;
+  }
+
+  .link a {
+    font-size: 16px;
+  }
+
+  .overlay img {
+    width: 100%;
+    max-width: 300px !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .overlay:target img {
+    animation: Fade 0.4s;
+  }
+
+  .overlay .close {
+    position: absolute;
+    top: 10% !important;
+    left: 50% !important;
+    font-size: 2.6em !important;
+    margin-left: -15px !important;
+    opacity: 0;
+  }
+
+  .overlay:target .close {
+    animation: slideDownFade 0.5s 0.5s forwards;
+  }
+
+  .overlay:target .next,
+  .overlay:target .prev {
+    animation: Fade 0.5s 0.5s forwards;
+  }
+
+  /* navigasi */
+  .overlay .next,
+  .prev {
+    font-size: 1.7em !important;
+    opacity: 0;
+  }
+
+  .overlay .prev {
+    position: absolute;
+    top: 85% !important;
+    left: 35% !important;
+  }
+
+  .overlay .next {
+    position: absolute;
+    top: 85% !important;
+    right: 35% !important;
+  }
+}
+
+@media (min-width: 360px) {
+  .title h2 {
+    font-size: 22px;
+  }
+
+  .title h5 {
+    font-size: 14px;
+  }
+
+  .title a {
+    font-size: 26px;
+  }
+
+  .title-checkout h3 {
+    margin-top: 200px;
+  }
+
+  .title-sosmed {
+    margin-top: -60px;
+  }
+
+  .title-sosmed h3 {
+    margin-top: -8px;
+    font-size: 20px;
+  }
+
+  .title-sosmed h6 {
+    font-size: 16px;
+  }
+
+  .menu a {
+    font-size: 18px;
+  }
+
+  .banner svg {
+    width: 100%;
+    margin-top: -100px;
+  }
+
+  .about h3 {
+    font-size: 22px;
+  }
+
+  .desain img {
+    border-radius: 20px;
+    width: 100%;
+    max-width: 400px;
+  }
+
+  /* Penjelasan Paket */
+  .penjelasan h2 {
+    font-size: 22px;
+  }
+
+  .penjelasan h3 {
+    font-size: 20px;
+  }
+
+  .penjelasan p {
+    margin-bottom: 75px;
+    font-size: 15px;
+  }
+
+  .penjelasan a {
+    margin-top: -70px;
+    font-size: 14px;
+  }
+
+  .desain h6 {
+    font-size: 0.6em;
+  }
+
+  .portfolio h4 {
+    font-size: 16px;
+  }
+
+  .portfolio a {
+    font-size: 12px;
+  }
+
+  .services h6 {
+    font-size: 13px;
+  }
+
+  .link h3 {
+    font-size: 22px;
+  }
+
+  .link a {
+    font-size: 20px;
+  }
+
+  .overlay img {
+    width: 100%;
+    max-width: 95% !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .overlay:target img {
+    animation: Fade 0.4s;
+  }
+
+  .overlay .close {
+    position: absolute;
+    top: 7% !important;
+    left: 50% !important;
+    font-size: 2.8em !important;
+    margin-left: -15px !important;
+    opacity: 0;
+  }
+
+  .overlay:target .close {
+    animation: slideDownFade 0.5s 0.5s forwards;
+  }
+
+  .overlay:target .next,
+  .overlay:target .prev {
+    animation: Fade 0.5s 0.5s forwards;
+  }
+
+  /* navigasi */
+  .overlay .next,
+  .prev {
+    font-size: 1.8em !important;
+    opacity: 0;
+  }
+
+  .overlay .prev {
+    position: absolute;
+    top: 70% !important;
+    left: 35% !important;
+  }
+
+  .overlay .next {
+    position: absolute;
+    top: 70% !important;
+    right: 35% !important;
+  }
+}
+
+@media (min-width: 400px) {
+  .desain h6 {
+    font-size: 0.8em !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .title h2 {
+    font-size: 28px;
+  }
+
+  .title h5 {
+    font-size: 18px;
+  }
+
+  .title a {
+    font-size: 30px;
+  }
+
+  .title-sosmed {
+    margin-top: -90px;
+  }
+
+  .title-sosmed h3 {
+    margin-top: -8px;
+    font-size: 26px;
+  }
+
+  .title-sosmed h6 {
+    font-size: 22px;
+  }
+
+  .menu a {
+    font-size: 22px;
+  }
+
+  .banner svg {
+    width: 100%;
+    margin-top: -150px;
+  }
+
+  .desain h6 {
+    font-size: 22px !important;
+    margin-top: -10px;
+  }
+
+  .portfolio h4 {
+    font-size: 24px;
+  }
+
+  .portfolio a {
+    font-size: 20px;
+  }
+
+  .services h6 {
+    font-size: 18px;
+  }
+
+  .link h3 {
+    font-size: 28px;
+  }
+
+  .link a {
+    font-size: 24px;
+  }
+
+  .overlay img {
+    width: 100%;
+    max-width: 85%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .overlay:target img {
+    animation: Fade 0.4s;
+  }
+
+  .overlay .close {
+    position: absolute;
+    top: 5% !important;
+    left: 50% !important;
+    font-size: 3.5em !important;
+    margin-left: -15px !important;
+    opacity: 0;
+  }
+
+  .overlay:target .close {
+    animation: slideDownFade 0.5s 0.5s forwards;
+  }
+
+  .overlay:target .next,
+  .overlay:target .prev {
+    animation: Fade 0.5s 0.5s forwards;
+  }
+
+  /* navigasi */
+  .overlay .next,
+  .prev {
+    font-size: 2.5em !important;
+    opacity: 0;
+  }
+
+  .overlay .prev {
+    position: absolute;
+    top: 85% !important;
+    left: 35% !important;
+  }
+
+  .overlay .next {
+    position: absolute;
+    top: 85% !important;
+    right: 35% !important;
+  }
+}
+
+@media (min-width: 1280px) {
+  .portfolio .zoom a img:hover {
+    transition: 0.3s;
+    transform: scale(1.1);
+    cursor: zoom-in;
+  }
+
+  .overlay img {
+    width: 100%;
+    max-width: 500px !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .overlay:target img {
+    animation: Fade 0.4s;
+  }
+
+  .overlay .close {
+    position: absolute;
+    top: 5% !important;
+    left: 50% !important;
+    font-size: 3.5em !important;
+    margin-left: -15px !important;
+    opacity: 0;
+  }
+
+  .overlay:target .close {
+    animation: slideDownFade 0.5s 0.5s forwards;
+  }
+
+  .overlay:target .next,
+  .overlay:target .prev {
+    animation: Fade 0.5s 0.5s forwards;
+  }
+
+  /* navigasi */
+  .overlay .next,
+  .prev {
+    font-size: 2.5em !important;
+    opacity: 0;
+  }
+
+  .overlay .prev {
+    position: absolute;
+    top: 85% !important;
+    left: 40% !important;
+  }
+
+  .overlay .next {
+    position: absolute;
+    top: 85% !important;
+    right: 40% !important;
+  }
+}
